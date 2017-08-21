@@ -1,0 +1,27 @@
+.icon_number{
+	font-size: ms(2);
+	padding: ms(-7) ms(-1);
+	width: ms(-1);
+	margin-left: auto;
+	margin-right: auto;
+}
+.section_map-area{
+	position: relative;
+	margin-bottom: ms(19);
+	@include breakpoint($mobile){
+		margin-bottom: ms(8);
+	}
+}
+#map-canvas{
+	width: 100%;
+	height: ms(24);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: -1;
+	@include breakpoint($mobile){
+		position: relative;
+		height: ms(22);
+	}
+}

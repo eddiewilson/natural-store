@@ -1,0 +1,70 @@
+// Events
+
+.section_grid-events{
+	position: relative;
+	.post_event{
+		position: relative;
+		&:first-child{
+			flex-basis: 100%;
+			max-width: 100% !important;
+			width: 100%;
+			margin-bottom: $beta-two;
+			.event_details{
+				z-index: 1;
+				max-width: 28.125%;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: ms(11);
+				@include breakpoint($mobile){
+					max-width: 85%;
+					position: relative;
+					top: 0;
+					transform: translateY(0%);
+					right: 0;
+				}
+			}
+			.post_event-image {
+				min-height: ms(20);
+				position: relative;
+				&:after{
+					content: 'Coming Up\a Next';
+					position: absolute;
+					left: 25%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					font-size: ms(7);
+					line-height: ms(7);
+					text-align: center;
+					color: $white;
+					font-family: $font-1;
+					white-space: pre;
+					@include breakpoint($mobile){
+						// content: '';
+						//display: none;
+						left: 50%;
+					}
+				}
+			}
+		}
+		.event_details{
+			min-height: ms(18);
+		}
+	}
+}
+.post_event-image {
+	min-height: ms(15);
+	@include breakpoint($mobile){
+		max-height: 50vh;
+	}
+}
+.before_dot{
+	&:before{
+		content: '•';
+		position: relative;
+		margin-left: - ms(4);
+		margin-right: ms(4);
+		color: $mughal-green;
+		font-size: ms(2);
+	}
+}

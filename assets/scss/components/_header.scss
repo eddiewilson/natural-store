@@ -1,0 +1,13 @@
+.header{
+	position: relative;
+	background-color: $white-smoke;
+	z-index: 3;
+	.logo, .subtitle{
+		position: relative;
+		z-index: 3;
+		@include breakpoint($mobile){
+			text-align: left;
+		}	
+	}
+	
+}

@@ -1,0 +1,52 @@
+svg{
+	max-width: 100%;
+	height: auto;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: flex;
+}
+.icon_social{
+	max-height: ms(-1);
+	@include breakpoint($mobile){
+		max-height: ms(1);
+	}
+}
+.icon_medium{
+	max-width: ms(5);
+	@include breakpoint($mobile){
+		max-width: ms(7);
+	}
+}
+.icon_author{
+	max-width: ms(4);
+	max-height: ms(4);
+}
+.caption-right{
+	margin-right: 1.125rem
+}
+.caption-bottom{
+	margin-top: ms(1);
+}
+.caption-left{
+	margin-left: 1.125rem
+}
+.bg-image_cover{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.border_round{
+	border-radius: 100vw;
+}
+.border_mughal-green{
+	border-color: $mughal-green;
+	border-width: ms(-12);
+	border-style: solid;
+}
+// Backgroudn images
+
+.height_post-thumbnail{
+	min-height: 20.99rem;
+}

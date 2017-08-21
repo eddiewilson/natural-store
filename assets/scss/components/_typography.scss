@@ -1,0 +1,168 @@
+h1, h2, h3, h4, h5, button{
+	// font-family: $font-1;
+	max-width: 50vw;
+	@include breakpoint($mobile){
+		max-width: 100%;
+	}
+}
+h1,.h1{
+	font-size: ms(9);
+	line-height: ms(10);
+	@include breakpoint($mobile){
+		font-size: ms(7);
+		line-height: ms(8);
+	}	
+}
+h2, .h2{
+	font-size: ms(7);
+	line-height: ms(7);
+}
+h3, .h3{
+	font-size: ms(5);
+	line-height: ms(6);
+	@include breakpoint($mobile){
+		font-size: ms(3);
+		line-height: ms(4);
+	}
+}
+h4, .h4{
+	font-size: ms(4);
+	line-height: ms(5);
+	font-weight: 100;
+}
+h5, .h5{
+	font-size: ms(3);
+	line-height: ms(4);
+	font-weight: 100;
+}
+h6, .h6{
+	font-size: ms(2);
+	line-height: ms(3);
+	font-weight: 400;
+	font-family: $font-1;
+}
+p{
+	font-size: ms(1);
+	line-height: ms(5);
+	font-family: $font-2;
+	margin-top: ms(3);
+	margin-bottom: ms(4);
+	max-width: 50vw;
+	@include breakpoint($mobile){
+		max-width: 100%;
+	}
+	&.list-item{
+		font-size: ms(0);
+		line-height: ms(1);
+		margin-top: ms(-1);
+		margin-bottom: ms(0);
+	}
+	&:first-child{
+		margin-top: 0;
+	}
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	font-family: inherit;
+}
+li.list-item{
+	font-size: ms(0);
+	line-height: ms(1);
+	margin-top: ms(-1);
+	margin-bottom: ms(0);
+}
+blockquote{
+	p{
+		font-size: ms(5);
+		line-height: ms(6);
+		//max-width: 33vw;
+		font-family: $font-1;
+	}
+}
+cite{
+	
+}
+.text_sub{
+	font-size: ms(-1);
+
+}
+.text_sub-2{
+	font-size: ms(-3);
+}
+.text-block{
+	max-width: 45vw;
+	text-align: left;
+}
+.text_uppercase{
+	text-transform: uppercase;
+	letter-spacing: ms(-17);
+}
+.text_italic{
+	font-style: italic;
+}
+.text_right{
+	text-align: right;
+}
+.text_center{
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.text_split-col{
+	column-count: 2;
+	column-gap: 4rem;
+	column-fill: balance;
+	@include breakpoint($mobile){
+		column-count: 1;
+	}
+}
+.font_serif{
+	font-family: $font-1;
+}
+.font_sans{
+	font-family: $font-2;
+}
+.font_light{
+	font-weight: 300;
+}
+.font_strong, strong{
+	font-weight: bold;
+}
+
+// Colours
+.clr_mughal-green{
+	color: $mughal-green;
+}
+.clr_light-grey{
+	color: $light-grey;
+}
+.clr_white{
+	color: white;
+}
+.clr_dim-grey{
+	color: $dim-grey;
+}
+.bg-clr_white{
+	background-color: $white;
+}
+.bg-clr_white_opacity{
+	background-color: rgba($white, 0.85);
+}
+.bg-clr_mughal-green{
+	background-color: $mughal-green;
+}
+.bg-clr_white-smoke{
+	background-color: $white-smoke;
+}
+.bg-clr_gainsboro{
+	background-color: $gainsboro;
+}
+
+// Opacity
+
+.ns-opacity{
+	opacity: 0.8;
+}
+

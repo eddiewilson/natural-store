@@ -1,0 +1,8 @@
+.button_padding{
+	padding: ms(1) ms(2);
+	&:hover{
+		@include smooth(0.2s);
+		cursor: pointer;
+		background-color: darken($mughal-green, 5%);
+	}
+}  

@@ -1,0 +1,82 @@
+// Variables
+
+// Pantone Colours
+
+// Modular Scale
+$ms-base:  1rem 1.125rem; // 1.125rem
+$ms-ratio: 1.416;
+
+
+$alpha-one: ms(2);
+$alpha-two: ms(4);
+$beta-one: 	ms(6);
+$beta-two: 	ms(8);
+$gamma-one: ms(10);
+$gamma-two: ms(12);
+
+// Typography
+
+$font-1: 'bravobold', serif;
+$font-2: 'Muli', sans-serif;
+
+// Colours
+
+$mughal-green: #256A37;
+$white: #ffffff;
+$white-smoke: #F7F6F2;
+$gainsboro: #E1DDD4;
+$onyx: #313639;
+$dim-grey: #6D6D6D;
+$light-grey: #D9D8DD;
+
+
+// GridLex Vars
+
+$gl-gutter: 2.5%;
+$gl-gutter-vertical: 0; 
+
+
+// Media Sizes
+
+$iphone3: 320px;
+$iphone3L: 480px;
+$iphone4: 640px;
+$iphone4L: 960px;
+$iphone5: 640px;
+$iphone5L: 1136px;
+$iphone6: 750px;
+$iphone6L: 1334px;
+$tablet: 768px; 
+$iphone6plus: 1080px;
+$desktop: 1440px;
+$big-desk: 1700px;
+$super-desk: 2560px;
+
+$superdesk: 1600px 5000px;
+$tablet: 480px 780px;
+$mobile: 100px 480px;
+
+// Mixins
+@mixin smooth($dur){
+	transition: all $dur ease-in-out 0s;
+}
+
+// Extends
+
+@mixin button(){
+	appearance: none;
+	padding: 0.7rem 1.2rem;
+	color: $hotpink;
+	background-color: transparent;
+	text-transform: uppercase;
+	border-radius: 100vw;
+	border: 0.1rem solid $hotpink;
+	font-size: 1.1rem;
+	font-family: $font-1;
+	@include smooth(0.2s);
+	&:hover{
+		cursor: pointer;
+		background-color: $hotpink;
+		color: $white;
+	}
+}
